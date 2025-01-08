@@ -7,6 +7,7 @@ public static void main(String args[]){
     int num;
     Scanner sc = new Scanner(System.in);
     num = sc.nextInt();
+    sc.close();
   System.out.println(fibo(num));
 }
 
