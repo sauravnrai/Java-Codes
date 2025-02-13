@@ -1,8 +1,7 @@
-
-
-public class StringBuilderdemo{
+public class Arrayrotation {
 
     public static void main(String[] args) {
         
     }
+    
 }

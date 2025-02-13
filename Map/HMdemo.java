@@ -1,8 +1,10 @@
+import java.util.HashMap;
 
 
-public class StringBuilderdemo{
+public class HMdemo {
 
     public static void main(String[] args) {
         
     }
+    
 }
