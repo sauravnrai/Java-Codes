@@ -1,0 +1,63 @@
+This files holds the information about all the bistwaise operators necessary for coding
+
+Any number can be broken down to representation in bits or binary representation i.e 0 and 1
+
+BITWISE AND (&)
+
+0 & anything is 0
+1 & 1 always 1
+1 & any number will result in the number itself
+
+When we use & with 1, digits remain the same
+
+
+BITWISE OR 
+
+1 | anything is 1
+If anyone is true then entire expression is true
+
+0 or anynumber will result in number itself
+
+
+BITWISE XOR (^)
+
+It is also known as exclusive-or
+
+0 ^ 0 and 1 ^ 1 will end up 0
+1 ^ 0 and 0 ^ 1 will end up 1
+
+Only one should be true
+
+Observations:
+
+Xor any number with 1, we will get complement of that number. i.e 1 xor 0 will give 1 because 0 got flipped.
+
+Xor any number with 0, we will get the  number itself
+
+Xor the number with itself, we will get 0
+
+Use case:
+
+Useful to find the bits that are loners
+
+find a unique or lonely number in an array of numbers where other numbers always repeat twice
+
+
+
+Complement (~)
+
+The digits at binary representation are flipped using complement
+
+100 gets flipped to 011 upon ~
+
+
+Left Shift (<<)
+
+If we want to left shift a number by n bits, we are actually multiplying the number by 2 power n
+
+
+Right shift (>>)
+If we want to left shift a number by n bits, we are actually dividing the number by 2 power n
+
+
+

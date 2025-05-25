@@ -1,0 +1,26 @@
+We have base 2, 10, 8, 16, and build our own custom base too
+
+We use by default base 10 or decimal number system
+
+
+Base conversions:
+
+We will convert base 10 to base 2 and from base 2 to base 8 or 16
+
+We we are given a number in decimal, we will divide the number by 2 and store its remainder from right
+
+
+
+Steps for conversion:
+
+If we have a number in base 2 or 8 or 16 and if we want to find the decimal equivalent, then we will use 
+the base, power, and digits from right. 
+
+Starting point: The right most digit * base * power(0)
+
+Ending point: The left most digit * base * power(number of digits - 1)
+
+The power gets increase by 1 as we move from right to left
+
+
+
