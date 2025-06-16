@@ -1,3 +1,4 @@
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -13,6 +14,7 @@ public class Diameter {
          int diameter = 0;
 
         Map<TreeNode, Integer> map = new HashMap<>();
+        // To record tree node and its depth
 
         LinkedList<TreeNode> stack = new LinkedList<>();
         stack.addLast(root); // always add root by default

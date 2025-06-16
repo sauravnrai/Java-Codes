@@ -1,7 +1,32 @@
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class SubArraySumK {
+public int subarraySum(int[] nums, int k) {
 
+        int current = 0; // used to find prefix sum
+        int count = 0; // used to find the count
+        Map<Integer, Integer> map = new HashMap<>(); // map to check if count is greater than 0 
+        // We will store prefix sum - target in the map and it appread how many times
+        map.put(0, 1); // For 0, map should be 1
+
+        for(int item: nums){
+
+            current = current + item;
+
+            count = count + map.getOrDefault(current - k, 0);
+            // This checks if the current - k was their in map or not, if not then it gives result as 0. current - k indicates result was there
+
+            map.put(current, map.getOrDefault(current, 0) + 1);
+            // This is used to store the current prefix sum in the map and increment its value by 1
+            /* We are storing all prefix sums, and if a prefix has occured in the past then it 
+             is a indiciation that there is a subarray is their equals k*/
+
+
+
+        }
+        return count;
+    }
     
 }
 
