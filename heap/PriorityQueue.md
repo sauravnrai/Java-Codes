@@ -47,6 +47,9 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
 PriorityQueue<int[]> maxHeap = new PriorityQueue<>(
     (a, b) -> (b[0]*b[0] + b[1]*b[1]) - (a[0]*a[0] + a[1]*a[1])
 );
+
+//This is for the squared distance: distance² = x² + y² that was used in kth closest point
+// Depending on the problem, custom comperator will change
 ```
 
 ## Key Methods
