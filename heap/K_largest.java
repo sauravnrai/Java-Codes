@@ -5,6 +5,7 @@ public class K_largest {
     public int findKthLargest(int[] nums, int k) {
 
       PriorityQueue<Integer> pq = new PriorityQueue<>(k); // sets the initial size as k
+      // k in () represents the size
 
         for(int item: nums){
             pq.offer(item); // adds element in the queue
@@ -26,7 +27,7 @@ public class K_largest {
 /*
   Solution for the problem
  * 
- * For kth largest, make an max heap using a priority queue of size K or solve it using the quick select algorithm
+ * For kth largest, make an min heap using a priority queue of size K or solve it using the quick select algorithm
  * 
  * To find the first or 2nd largest, we can do it using a single loop and two variables
  * But to find third and next largest, we can use this approach

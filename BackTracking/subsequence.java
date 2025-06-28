@@ -44,28 +44,7 @@ public class subsequence {
  * ca is not a valid subsequence of abc but a permutation
  * 
  *  
-This program generates all possible subsequences of a given string using recursion.
-
-Concept:
-For each character in the string, we have two choices:
-1. Include the character in the current subsequence.
-2. Exclude the character.
-
-This leads to 2^n total subsequences for a string of length n (including the empty string).
-
-Explanation:
-- `ans`: A list that stores all generated subsequences.
-- `p`: Represents the "processed" part of the string — the current subsequence being built.
-- `up`: Represents the "unprocessed" part — the remaining string characters to be considered.
-
-Recursive Logic:
-- Base Case: When `up` is empty, the current processed string `p` is a complete subsequence and is added to the answer list `ans`.
-- Recursive Calls:
-  a) `Subseq(ans, p + up.charAt(0), up.substring(1))`: Includes the first character of `up` in `p`.
-  b) `Subseq(ans, p, up.substring(1))`: Skips the first character of `up`.
-
-This process continues recursively until all characters are either taken or skipped, generating all possible subsequences.
-
+ * 
  * 
  * 
  * 

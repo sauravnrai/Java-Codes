@@ -30,7 +30,8 @@ public class StringBuilderdemo{
 
         
         System.out.println("Lenght of the sb: "+ sb.length());
-
+        
+        sb.reverse(); // reverses the string
         
     }
 }
